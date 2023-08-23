@@ -2,6 +2,8 @@ require 'rspec'
 require 'httparty'
 require 'pry'
 require 'tty-prompt'
+require 'benchmark'
+
 
 RSpec.describe 'Pharmacy V6' do
   before(:all) do
@@ -46,11 +48,16 @@ RSpec.describe 'Pharmacy V6' do
     ]
 
     api_endpoints.each do |endpoint|
-      start_time = Time.now
-      response_all = HTTParty.get("#{@base_url}#{endpoint}", headers: @headers)
-      end_time = Time.now
-      elapsed_time = end_time - start_time
-      puts "time: #{elapsed_time} for api #{endpoint}"
+      # start_time = Time.now
+      
+      binding.pry
+      
+      response_all = Benchmark.measure {HTTParty.get("#{@base_url}#{endpoint}", headers: @headers)} 
+      # response_time = Benchmark.measure { response_all }
+      # puts response_time
+      # end_time = Time.now
+      # elapsed_time = end_time - start_time
+      # puts "time: #{elapsed_time} for api #{endpoint}"
       expect(response_all.code).to eq(200)
       expect { JSON.parse(response_all.body) }.not_to raise_error
     end
