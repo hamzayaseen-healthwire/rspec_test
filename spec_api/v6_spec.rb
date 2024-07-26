@@ -7,10 +7,10 @@ require 'benchmark'
 
 RSpec.describe 'Pharmacy V6' do
   before(:all) do
-    @base_url = 'https://healthwire.pk/api/v6'
+    @base_url = ''
     @headers = {
-      'x-authorization-secret-key' =>  'eyJhbGciOiJSUzI1NiJ9.eyJzdWNjZXNzIjp0cnVlfQ.NDpM9sShHWScsD7zEiBVmMcEdRmk6y-kODDMOavvpgJfve2Tw9A_c9WI5VMmAwXK268bhAqP8Zf7xNwrFM2riyxSEAHXITh60bhXZbPGnTeHvd89b-4wbSip1qBCYOf5DShb2Jlcmv6B2gX61ny13k7Y0bSl9QmBacIzjz1ViJBvLf2b9SIzkhqhJgwrZrBf3K4QbqmjmZk22N02V4TWNUTfAEXUdeHP-bURJaPWFAHq_lGQV7x04aGojX-32nvIpat7emFK9KzMgqlGW4hiVGj8V30WyJrcKOsicIKaf0YRl1e1gSqrNMejz9TGXY29hM7hQJ0V6PkRJ0RV0l7V7enk6wXtuBbuCDbb8qvqNvIIGM-Qri1EDaQNEdi1ih0F8kpMgaE-R9cQ9Zqunt0M2HuTOG7qLNYQfwZoPNlmhPLiNqUlap8nmbqIL6gPhK7Ei3V16wF6IHLfar5kHaDhQJAsQiGez6D2ibxNkGi-oataMyYRK_SYMsZV1F2jVYCfGmpAzr509zGvDdKQNDsB_JInwTVvpg_1or6rBV2d2dWEPrPz19tuL3yoUG-wrq4h-KTOeRhuqdpzOA_5INZwpeXDxFlZIn-xjm4aX2ANk5zuEBTeX-T7YZDvb7WGj-r7LtmXPiRl5u9lTcIX8DCq2ovyPYCM47NmhqXU3XQgJ6Y',
-      'x-authorization-public-key' =>  '-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAzT5kt2ZPMUu8wMIufapo\nt2DQNnhSgVh8Y16DuAW8VsHj292pSgIpkDhirWcrWc3DbRkYJyUyCUiY9i4tMH0K\nPbx461s8yNK/ZJJ3JH2gM4YZZtnBGZdV5ce+jvx2LFWBkIGIQto34CYAwI5pvgHs\nxuizy7rxZIEMDgFR7LOqA/Lj/K1vCLexc5rDPG5ulohR4pCI69UQ2zxA42dNmTq0\nkthwathZY1DqFGh0chPm61jidpbgdie0r0WXdQlj2+yDQC25Bs8PfGJuZboc/UqK\nws4QzkPVhWHEZ4wrNdy6k5M4J1heGbkPLodVK7OEdaCWzFPRO5C1vkupF2DV25vm\nhdmquid02ZIb7Z9zT63c9k4KuyScNtP1ajcNNmN3D2o2NKgbEhYhsp/RQE6Whj1P\nMzrQSdWeY0/JasnqppmljGLC3oKFheWnBH+SCg3T2+v93SWHfmltV/X5xKzUCWMa\ngoVK6G5fCd3lBDaHy++NfNSb+txNSjMXOdvzjYvbF8oWc3annnhwwVpYW+wdTiTp\neS55wscspmLTPHXXvoVf10l4e4BptPb70wr6IJQA5EIEmYJ/9JTvxXfFfiRJG/+/\nAII3pjzW0j8xQud0oBCWR7T0YrDV5DgFNBuXQiZVGhKgOwBLVfG9ZG6kjAGGhpIB\nk962C0KC+Euc/hL4IYKUFx0CAwEAAQ==\n-----END PUBLIC KEY-----\n'
+      'x-authorization-secret-key' =>  '',
+      'x-authorization-public-key' =>  ''
     }
   end
 
